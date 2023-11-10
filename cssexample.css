@@ -1,0 +1,29 @@
+body {
+    background-color: lightblue;
+    margin: 5%;
+}
+
+h1 {
+    color: darkgreen;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+div {
+    background-color: lightgreen;
+    border: 1em solid lightgrey;
+}
+
+div > h2 {
+    text-align: center;
+    color: darkblue;
+}
+
+#idone {
+    text-align: right;
+    color: red;
+}
