@@ -1,4 +1,4 @@
-import anime from './node_modules/animejs/lib/anime.es.js';
+import anime from '../node_modules/animejs/lib/anime.es.js';
 
 /*anime({
   targets: "div.box",
@@ -21,7 +21,7 @@ anime({
     targets: 'div',
     translateX: 250,
     rotate: '1turn',
-    backgroundColor: '#FFF',
-    duration: 800,
+    /*backgroundColor: '#FFF',*/
+    duration: 2000,
     loop: true
 });
