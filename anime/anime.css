@@ -1,0 +1,16 @@
+.test_move{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    display: inline-block;
+}
+.back_purple{background-color: purple;}
+.back_green{background-color: green;}
+.back_black{background-color: black;}
+.back_grey{background-color: grey;}
+
+.grid-item  {
+    border: lightgrey;
+    border: 10px;
+}

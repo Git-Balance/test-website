@@ -18,10 +18,11 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
 
 document.getElementById('output').innerHTML = "From JS";
 anime({
-    targets: 'div',
-    translateX: 250,
-    rotate: '1turn',
+    targets: '.test_move',
+    translateX: 100,
+    rotate: '5',
     /*backgroundColor: '#FFF',*/
     duration: 2000,
-    loop: true
+    loop: false
 });
+document.getElementById('output').innerHTML = "End";
