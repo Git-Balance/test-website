@@ -16,13 +16,16 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
   loop: true,
 }); */
 
-document.getElementById('output').innerHTML = "From JS";
-anime({
+document.getElementById('move_output').innerHTML = "Moving blocks";
+var animation = anime({
     targets: '.test_move',
     translateX: 100,
-    rotate: '5',
+    rotate: '1turn',
     /*backgroundColor: '#FFF',*/
-    duration: 2000,
-    loop: false
+    duration: function(el, i) { return i+1 * 1000; },
+    direction: 'alternate',
+    loop: true,
+    easing: 'easeInOutSine'
 });
-document.getElementById('output').innerHTML = "End";
+document.querySelector('#move_restart').onclick = function(){document.querySelector('#move_restart').innerHTML = "Test" /*animation.restart();*/}
+

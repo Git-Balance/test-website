@@ -5,14 +5,15 @@
         <title>Anime App</title>
     </head>
     <body>
-        <p id="output">Stuff</p>
         <div class="grid-container">
-            <div class="grid-item">
+            <div class="grid-item" id="move_test">
+                <p id="move_output">Stuff</p>
                 <div class="test_move back_purple"></div>
                 <div class="test_move back_green"></div>
                 <div class="test_move back_black"></div>
-                <div class="test_move back_grey"></div>
-                <script type="module" src="./anime.js"></script>
+                <div class="test_move back_grey"></div> <br>
+                <button type="button" id="move_restart">Restart</button>
+                <script type="module" src="./blockMove.js"></script>
             </div>
         </div>
     </body>
