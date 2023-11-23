@@ -1,3 +1,9 @@
+.centered {
+    background-color: darkblue;
+    text-align: center;
+    padding: 0;
+}
+
 body {
     background-color: #131316;
     color: #ffffff;
@@ -9,16 +15,32 @@ section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: 75vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background: lightgreen;
+    padding: 10px;
+}
+
+.grid-container > div {
+    text-align: center;
 }
 
 .hidden {
     opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
     transition: all 1s;
 }
 
 .show {
     opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 @media(prefers-reduced-motion) {
